@@ -10,6 +10,8 @@ Processing is illustrated with the Shellscripts in the `scripts/` directory.
 
 ## Usage
 
+You need to have command-line tools `fzf`, `curl`, `perl`, `fold` and `tput` installed.
+
 ## Basic Usage
 
 Download/clone the repo. Make Bash script file `scripts/find-persona` executable.  
@@ -21,7 +23,7 @@ Run `scripts/find-persona` without any arguments. A popup will appear with a lis
 | ![fzf in action](./img/screenshot-terminal-find-persona.png)  |
 |  Use the arrow keys to scroll, or type more keywords to narrow down   |
 
-In the screenshot above, the left half of the screen shows the available personas. The right half shows persona definition that matches best. The text either contains the keywords just typed, or matches the list of keywords given.
+In the screenshot above, the left half of the screen shows the available personas. The right half shows a persona definition that matches best. The text either contains the keywords just typed, or matches the list of keywords given.
 
 Select one row and press enter. The script will then print the persona definition as an `export CI=...` to the terminal.  (`CI` is short for "custom instruction" and is the name of the environment variable that I use in my subsequent commands. You can change it to whatever you want.)
 
@@ -29,7 +31,7 @@ Note that the `find-persona` script does not actually export `CI` as an environm
 
 I configured the script this way because
 
-- I don't want to overwrite any customizations I've applied to any existing `CI` variable,
+- I don't want to overwrite any existing `CI` variable (I might have set it before, and I don't want to lose it)
 - I don't want to clutter my environment with a lot of variables that I only use once.
 
 ## Usage with a script
