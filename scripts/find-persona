@@ -2,7 +2,8 @@
 #set -euo pipefail
 #set IFS=$'\n\t'
 # use this to change the custom instruction (ci) CLI option of the explore_perplexity script
-data_url="https://raw.githubusercontent.com/knbknb/awesome-chatgpt-prompts/knb-2024/prompts-grouped-sorted.csv"
+#data_url="https://raw.githubusercontent.com/knbknb/awesome-chatgpt-prompts/knb-2024/prompts-grouped-sorted.csv"
+data_url="https://raw.githubusercontent.com/knbknb/ai-system-personas/main/personas-grouped-sorted.csv"
 data_file="data.txt"
 # simple caching
 if [ ! -f "$data_file" ]; then
