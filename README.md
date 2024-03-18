@@ -17,21 +17,24 @@ Run `scripts/find-persona` without any arguments. A popup will appear with a lis
 
 | fuzzy-finder in action |
 |----------|
-|   After typing `scripts/find-persona` this should pop up  |
+|  Inside Terminal, after typing `scripts/find-persona` this should pop up  |
 | ![fzf in action](./img/screenshot-terminal-find-persona.png)  |
-|   inside Terminal  |
+|  Use the arrow keys to scroll, or type more keywords to narrow down   |
 
-Select one row and press enter. The script will then print the persona as an `export CI=...` to the terminal.  (`CI` is short for "custom instruction" and is the name of the environment variable that I use in my subsequent commands. You can change it to whatever you want.)
+In the screenshot above, the left half of the screen shows the available personas. The right half shows persona definition that matches best. The text either contains the keywords just typed, or matches the list of keywords given.
 
-Note that the `find-persona` script does not actually export `CI` as an environment variable. You can do that manually if you want to use it in your script. Use copy and paste to do so.  
-I configured it this way because
+Select one row and press enter. The script will then print the persona definition as an `export CI=...` to the terminal.  (`CI` is short for "custom instruction" and is the name of the environment variable that I use in my subsequent commands. You can change it to whatever you want.)
 
-- I don't want to overwrite any customizations I#ve applied to any preexisting CI` variables,
+Note that the `find-persona` script does not actually export `CI` as an environment variable. You can do that manually if you want to use it in your script. Use copy and paste to do so.
+
+I configured the script this way because
+
+- I don't want to overwrite any customizations I've applied to any existing `CI` variable,
 - I don't want to clutter my environment with a lot of variables that I only use once.
 
 ## Usage with a script
 
-my main use case for using these personas is in my script `explore_perplexity_api.py` from the [explore-perplexity-api](https://github.com/knbknb/explore-perplexity-api) repo.
+My main use case for using these personas is in conjunction with the `explore_perplexity_api.py`  script from my [perplexity-api-search](https://github.com/knbknb/perplexity-api-search) repo.
 
 Sometimes I call it with the `--persona` option. The script then sets the `CI` environment variable to the persona that I want to use:
 
