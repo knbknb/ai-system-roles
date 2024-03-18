@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# use this to change the custom instruction (ci) CLI option of the explore_perplexity script
+curl -sL https://raw.githubusercontent.com/knbknb/awesome-assistants/main/assistants.yml \
+| yq -o=json \
+| jq '.[] | [.emoji + .name, .instructions] | @tsv |  gsub("\\\\n"; " ") | gsub(","; ";")' \
+| fzf -1 -q "$1" --delimiter "\t" --preview 'echo export ci={1} | fold -s -w $(tput cols)' 
