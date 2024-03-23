@@ -1,10 +1,10 @@
-# AI System Personas
+# AI LLM Personas
 
-An opinionated list of AI System personas, grouped by topic.
+An opinionated list of LLM personas, grouped by topic.
 
-This is my personal version of a collection of personas, or prompt modifiers, or custom instructions.
+This is my personal version of a collection of personas, or prompt modifiers, or custom instructions. These are for AI-systems, not "system personas" in the sense of user interface design.
 
-Check out the `personas-grouped-sorted.csv`.  files for the actual personas.  
+Check out the `personas-grouped-sorted.csv` file for the actual personas.  
 
 Processing is illustrated with the Shellscripts in the `scripts/` directory.
 
@@ -15,19 +15,19 @@ You need to have command-line tools `fzf`, `curl`, `perl`, `fold` and `tput` ins
 ## Basic Usage
 
 Download/clone the repo. Make Bash script file `scripts/find-persona` executable.  
-Run `scripts/find-persona` without any arguments. A popup will appear with a list of personas. Keep on typing some keywords. The fuzzy-finder `fzf` will narrow down the selection list.
+Run `scripts/find-persona` without any arguments. A popup will appear with a list of personas. Keep on typing some keywords. The fuzzy-finder `fzf` will narrow down the selection list and show its preview window inside the terminal.
 
-| fuzzy-finder in action |
+| preview-window of fuzzy-finder `fzf`|
 |----------|
 |  Inside Terminal, after typing `scripts/find-persona` this should pop up  |
 | ![fzf in action](./img/screenshot-terminal-find-persona.png)  |
 |  Use the arrow keys to scroll, or type more keywords to narrow down   |
 
-In the screenshot above, the left half of the screen shows the available personas. The right half shows a persona definition that matches best. The text either contains the keywords just typed, or matches the list of keywords given.
+In the screenshot above, the left half of the preview window shows the available personas. The right half shows a persona definition that matches best. The text either contains the keywords just typed, or matches the list of keywords given.
 
-Select one row and press enter. The script will then print the persona definition as an `export CI=...` to the terminal.  (`CI` is short for "custom instruction" and is the name of the environment variable that I use in my subsequent commands. You can change it to whatever you want.)
+Select one row and press enter. The script will then print the persona definition as a command `export CI=...` to the terminal.  (`CI` is short for "custom instruction" and is the name of the environment variable that I use in my subsequent commands. You can change it to whatever you want.)
 
-Note that the `find-persona` script does not actually export `CI` as an environment variable. You can do that manually if you want to use it in your script. Use copy and paste to do so.
+Note that the `find-persona` script does _not actually_ export `CI` as an environment variable. You can do that manually if you want to use it in your script. Use copy and paste to do so.
 
 I configured the script this way because
 
