@@ -64,6 +64,13 @@ export PERPLEXITY_API_KEY=your-api-key-here
 
 The `--slug` argument is just a label that I use to keep track of the prompts that I've used. It will become part of the output filename. Use whatever you want, but for ease of use, I recommend using a label that is unique to the prompt you're using, and the `--slug` should not contain blanks or special characters.
 
+## More Prompts and Personas
+
+Some good collections, presented with good GUI Design in mind, and with a lot of additional information:
+
+- [Prompt Library](https://docs.anthropic.com/claude/prompt-library) by Anthropic AI for Claude LLM
+- [Prompts from top-rated GPTs in the GPTs Store](https://github.com/ai-boost/awesome-prompts) - Curated by AI-Boost
+
 ## License
 
 CC-0, see [LICENSE](./LICENSE) file.
