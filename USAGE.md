@@ -4,15 +4,16 @@
 
 You need to have command-line tools `fzf`, `curl`, `perl`, `fold` and `tput` installed.
 
-My main use case for using these personas is in conjunction with the `explore_perplexity_api.py`  script from my [perplexity-api-search](https://github.com/knbknb/perplexity-api-search) repo.
+My main use case for using these personas is callin `find-persona` in conjunction with the `explore_perplexity_api.py`  script from my [perplexity-api-search](https://github.com/knbknb/perplexity-api-search) repo.
 
-Sometimes I call it with the `--persona` option. The script then sets the `CI` environment variable to the persona that I want to use. Here, "Education,"CS Bootcamp Instructor":
+Sometimes I call `explore_perplexity_api.py` with the `--persona` option.  
+The scripts then set the `CI` environment variable to the persona that I want to use. Here, "Education,"CS Bootcamp Instructor":
 
 ```bash
-# EXAMPLE OF A TERMINAL SESSION with the scripts
+# EXAMPLE OF A TERMINAL SESSION 
+# with the 2 scripts "find-persona" and "explore_perplexity_api.py"
 
-# Create popup for selecting a persona 
-# by calling the find-persona script
+# Create fzf preview window, for selecting a persona, interactively
 ~/ai-system-personas/scripts/find-persona
 
 # the script will print/echo the persona definition as an export command
@@ -26,9 +27,9 @@ export CI='Education,"CS Bootcamp Instructor","From now on, act as an instructor
 # call the script that does the heavy lifting
 export PERPLEXITY_API_KEY=your-api-key-here
 ./explore_perplexity_api.py --prompt "Explain to a non-programmer what a REST-API is" \
-   --slug rest-api --persona "$CI"
+   --slug rest-api --persona "$CI" --persona-slug cs-instructor
 
 # output will be saved to a file named final-output/rest-api-<MODELNAME>.md
 ```
 
-The `--slug` argument is just a label that I use to keep track of the prompts that I've used. It will become part of the output filename. Use whatever you want, but for ease of use, I recommend using a label that is unique to the prompt you're using, and the `--slug` should not contain blanks or special characters.
+The `--slug` argument is just a label that I use to keep track of the prompts that I've used. It will become part of the output filename. Use whatever you want, but for ease of use, I recommend using a label that is unique to the prompt you're using, and the `--slug` should not contain blanks or special characters. (Same for the `--persona-slug` argument.)

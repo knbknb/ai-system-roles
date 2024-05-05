@@ -7,7 +7,7 @@ See the "personas-grouped-sorted.csv" file for the actual personas.
 
 This is my personal version of a collection of personas, or prompt modifiers, or custom instructions. These are for AI-systems, not "system personas" in the sense of user interface design.
 
-Processing/Usage is illustrated with the Shellscripts in the `scripts/` directory.
+Processing/Usage is illustrated with the Shellscripts in the `scripts/` directory, in [USAGE.md](./USAGE.md) and as shown below.
 
 ## Basic Usage
 
