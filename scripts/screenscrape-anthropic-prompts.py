@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+# Description: This script scrapes the Anthropic prompt library and saves the data to a JSON file.
+# There are ~65 prompts in the library. 
+# The script fetches the prompt title, the prompt text, and the prompt header.
+# knb 2024-05
 # dependencies: 
 # pip3 install requests beautifulsoup4
 
