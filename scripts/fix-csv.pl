@@ -1,4 +1,5 @@
 #!/usr/bin/perl
+# used for processing the original propompt collection which had some weaknesses or formatting errors
 use strict;
 use warnings;
 use Text::CSV;

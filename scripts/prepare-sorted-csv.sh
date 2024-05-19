@@ -21,9 +21,9 @@ csvjoin -y 4 -c "act" prompts-grouped.csv  prompts.csv \
 > prompts-grouped-sorted.semi.csv
 
 perl -pi -E "s/I want you to/From now on,/g" prompts-grouped-sorted.semi.csv
-#perl -pi -E 's/[^"]$/"/g' prompts-grouped-sorted.semi.csv
 perl -pi -e 's/([^"])\n/$1"\n/g'  prompts-grouped-sorted.semi.csv
 perl -pi -E 's/My first .+$"/"/g' prompts-grouped-sorted.semi.csv
-# can be read in by 
+
+# outfile can be read in by 
 #< prompts-grouped-sorted.semi.csv \
 # fzf -1 -q "$1" --delimiter "\t" --preview 'echo export ci={1} | fold -s -w $(tput cols)'
