@@ -14,13 +14,14 @@ fi
 
 # Fetch data and feed into fzf
 cat $data_file \
- | fzf -1 -q "$1" --delimiter "\t" --preview 'echo "{1}" | fold -s -w $(tput cols)' \
+ | fzf --select-1 --exact -q "$1" --delimiter "\t" --preview 'echo "{1}" | fold -s -w $(tput cols)' \
  | perl -pe "s/^/export CI='/; s/\$/';/"
 
-# `fzf -1 -q "$1" --delimiter "\t"`: 
+# `fzf --select-1 -q "$1" --delimiter "\t"`: 
 # `fzf` is a command-line fuzzy finder. It takes the data from `curl` 
 # and allows you to interactively search through it. 
-# The `-1` option makes `fzf` automatically select the item if there's only one match. The `-q "$1"` option pre-fills the search query with the first argument passed to the script. 
+# The `--select-1` option makes `fzf` automatically select the item if there's only one match. 
+# The `-q "$1"` option pre-fills the search query with the first argument passed to the script. 
 # The `--delimiter "\t"` option sets the field delimiter to a tab character.
 
 # `--preview 'echo "{1}" | fold -s -w $(tput cols)'`: 
