@@ -4,7 +4,7 @@
 # use this to change the custom instruction (ci) CLI option of the explore_perplexity script
 #data_url="https://raw.githubusercontent.com/knbknb/awesome-chatgpt-prompts/knb-2024/prompts-grouped-sorted.csv"
 data_url="https://raw.githubusercontent.com/knbknb/ai-system-personas/main/personas-grouped-sorted.csv"
-data_file="data.txt"
+data_file="/tmp/find-prompt-datatable.txt"
 # simple caching
 if [ ! -f "$data_file" ]; then
     curl -sL -H "Cache-Control: no-cache" $data_url > $data_file
