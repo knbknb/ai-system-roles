@@ -28,9 +28,9 @@ In the picture above,
 - The right side shows the best matching persona.
 - The highlighted text is the selected prompt for the typed keyword(s).
 
-Pick one row and press enter. The script will print the persona definition as a ready-to-run `export` command to the terminal. (The command `export CI=<prompt text>` sets a variable `CI` - "`C`ustom `I`nstruction". The long prompt text is saved in a two-letter `$CI` environment variable for use in later commands. You can change that `export` command to your liking.)
+Pick one row and press enter. The script will print the persona definition as a ready-to-run `export` command to the terminal. The command `export CI=<prompt text>` sets a variable `CI` - "`C`ustom `I`nstruction". The long prompt text is saved in a two-letter `$CI` environment variable.
 
-Note that the interactive selection _did not actually export_ `CI` as an environment variable. You can do that manually (by pressing enter again), if you want to use it in later commands. Use copy and paste to do so.
+Note that the interactive selection _did not actually export_ `CI` as an environment variable. You can do that manually by pressing enter again, if you want to use `$CI` in later commands.
 
 See [EXAMPLE.md](EXAMPLE.md) for a more detailed example.
 
