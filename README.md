@@ -17,9 +17,3 @@ How I use it in my workflow: See [USAGE.md](USAGE.md#my-personal-usage), and my 
 ## License
 
 CC-0, see [LICENSE](./LICENSE) file.
-
-## Previously
-
-This is a continuation of the work started in [my awesome-chatgpt-prompts repo](https://github.com/knbknb/awesome-chatgpt-prompts/) which in turn was a fork of 3rd-party [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts).
-
-My fork has diverged to a point where it's no longer compatible with the original repo, so I've started a new one.
