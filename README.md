@@ -10,9 +10,9 @@ They are not "system personas" in the sense of user interface design.
 
 Processing/Usage is illustrated with the Shellscripts in the `scripts/` directory, in [USAGE.md](./USAGE.md).
 
-## Advanced Usage
+## Usage
 
-How I use it in my workflow: See [USAGE.md](USAGE.md#my-personal-usage), and my repo [perplexity-api-search](https://github.com/knbknb/perplexity-api-search)
+How I use it in my workflow: See [USAGE.md](USAGE.md#my-personal-usage), [EXAMPLE.md](./EXAMPLE.md), and my repo [perplexity-api-search](https://github.com/knbknb/perplexity-api-search).
 
 ## License
 
