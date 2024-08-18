@@ -1,21 +1,40 @@
 #!/usr/bin/env bash
-#set -euo pipefail
-#set IFS=$'\n\t'
-# use this to change the custom instruction (ci) CLI option of the explore_perplexity script
-#data_url="https://raw.githubusercontent.com/knbknb/awesome-chatgpt-prompts/knb-2024/prompts-grouped-sorted.csv"
+# Interactive selection of a system prompt/custom instruction/persona on the command line.
+# knb 2024
+
 data_url="https://raw.githubusercontent.com/knbknb/ai-system-personas/main/personas-grouped-sorted.csv"
-data_file="/tmp/find-prompt-datatable.txt"
-# simple caching
-if [ ! -f "$data_file" ]; then
-    curl -sL -H "Cache-Control: no-cache" $data_url > $data_file
+# 
+# Make it operating system agnostic
+# - Check if tempdir is not already set
+# - Determine the operating system type
+# - Create a temporary directory with a specific template for macOS
+# - Create a temporary directory with a default template for other systems
+if [ -z "${tempdir:-}" ]; then
+    if [[ "$OSTYPE" == "darwin"* ]]; then
+        tempdir=$(mktemp -d -t find-prompt-datatable)
+    else
+        tempdir=$(mktemp -d)
+    fi
 fi
 
-# "ci" is the custom instruction variable, only in scope in preview window
+cached_file="$tempdir/find-prompt-datatable.txt"
 
-# Fetch data and feed into fzf
-cat $data_file \
+# simple caching
+if [ ! -f "$cached_file" ]; then
+    echo "Will use cached document at $cached_file"
+    curl -sL -H "Cache-Control: no-cache" "$data_url" > "$cached_file"
+fi
+
+
+# Pipe the contents of the cached file to fzf for interactive selection.
+# Use fzf to filter and select an exact match based on the query provided as the first argument.
+# Preview the selected line by folding it to fit the terminal width.
+# Format the selected line to export it as an environment variable using Perl.
+cat $cached_file \
  | fzf --select-1 --exact -q "$1" --delimiter "\t" --preview 'echo "{1}" | fold -s -w $(tput cols)' \
  | perl -pe "s/^/export CI='/; s/\$/';/"
+
+# "CI" variable: Custom Instruction variable, only in scope in preview window
 
 # `fzf --select-1 -q "$1" --delimiter "\t"`: 
 # `fzf` is a command-line fuzzy finder. It takes the data from `curl` 
