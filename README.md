@@ -1,14 +1,18 @@
 # AI LLM Personas
 
 ```text
-An opinionated list of LLM personas, grouped by topic. 
+An opinionated list of LLM , or roles, grouped by topic. 
 See the "personas-grouped-sorted.csv" file for the actual personas.
 ```
 
 This is my personal version of a collection of personas, or prompt modifiers, or custom instructions. These are for interactions with LLMs, AI-systems.  
 They are not "system personas" in the sense of user interface design.
 
-Processing/Usage is illustrated with the Shellscripts in the `scripts/` directory, in [USAGE.md](./USAGE.md).
+It works like this:
+
+> "As a web developer and software tester, be critical of the input I provide and provide me with a list of issues in the code."
+
+Processing/Usage is further illustrated in [USAGE.md](./USAGE.md), and in the Shellscripts in the `scripts/` directory.
 
 ## Usage
 

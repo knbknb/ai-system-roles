@@ -6,7 +6,7 @@ You need to have command-line tools `fzf`, `curl`, `perl`, `fold` and `tput` ins
 
 ## Usage as a shell script
 
-Install this script into your path, e.g. in `~/bin`. At the first run, the script will download the personas from the repository and store them in `/tmp.
+Install this script into your path, e.g. in `~/bin`. At the first run, the script will download the personas from the repository and store them in `/tmp`.
 
 You do not have to call it `find-persona`, you can rename the script to whatever you want.
 
@@ -36,7 +36,9 @@ See [EXAMPLE.md](EXAMPLE.md) for a more detailed example.
 
 ## More Prompts and Personas
 
-Some good collections, presented with good GUI Design in mind, and with a lot of additional information:
+Some good collections, presented with both good Prompt Design and GUI Design in mind, and with a lot of additional information:
 
 - [Prompt Library](https://docs.anthropic.com/claude/prompt-library) by Anthropic AI for Claude LLM
-- [Prompts from top-rated GPTs in the GPTs Store](https://github.com/ai-boost/awesome-prompts) - Curated by AI-Boost
+- [Prompts from top-rated GPTs in the GPTs Store](https://github.com/ai-boost/awesome-prompts) - Anonymously curated by "AI-Boost". 4.9k Stars on Guthub as of Aug. 2024.
+
+There are many, many more such collections on the web. The above two are just examples.
