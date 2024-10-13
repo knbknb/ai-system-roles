@@ -12,7 +12,10 @@ Thus:
 I use these prompts/roles mainly for software development tasks:
 
 1. **Github Copilot Chat:** Tweak Copilot's suggestions by selecting some lines of code in your editor. Call `find-role`, pick a prompt, copy it. Paste the prompt into the Github Copilot Chat Extension for VSCode. Press enter. Github Copilot will explain, rewrite, or work with  the code lines in `#selection`, _according to your prompt._
-2. **My `explore_perplexity_api.py`  script** from the [perplexity-api-search](https://github.com/knbknb/perplexity-api-search) repo:  
+2. **`llm` cli tool**: Using these prompt together with Simon Willison's [`llm`](https://github.com/simonw/llm/) command-line tool:  I can call `llm` with  
+   `llm gpt-4o "$ROLE 'prompt text'"`.  
+   This is a great, simple way to interact with AI systems from the command line, and for me was the basis for more complex scripts.
+3. **My `explore_perplexity_api.py`  script** from the [perplexity-api-search](https://github.com/knbknb/perplexity-api-search) repo:  
    Sometimes I call `explore_perplexity_api.py` with the `--role` option.  
 The scripts then set the `ROLE` environment variable to the role that I want to use. Here, _"Education,"CS Bootcamp Instructor"_. This can significantly change the output of the AI system:
 
@@ -22,11 +25,13 @@ The scripts then set the `ROLE` environment variable to the role that I want to 
 # Open two terminal windows side by side, and then:
 
 # Terminal 1: Create fzf preview window, for selecting a role, interactively
-~/ai-system-roles/scripts/find-role
+`~/ai-system-roles/find-role`
+# ... or
+`~/bin/find-role`
 
 # the script will print/echo the role definition as an export command
 # but will NOT actually set the environment variable:
-echo export ROLE='Education,"CS Bootcamp Instructor","From now on, act as an instructor in a computer science bootcamp, teaching algorithms to beginners. You will provide code examples using python programming language. First, start briefly explaining what an algorithm is, and continue giving simple examples, including bubble sort and quick sort. Later, wait for my prompt for additional questions. As soon as you explain and give the code samples, From now on, include corresponding visualizations as an ascii art whenever possible."';
+echo export ROLE='Education,"CS Bootcamp Instructor","From now on, act as an instructor in a computer science bootcamp, teaching algorithms to beginners. You will provide code examples using python programming language. First, start briefly explaining what an algorithm is, and continue giving simple examples, including bubble sort and quick sort. Later, wait for my prompt for additional questions. As soon as you explain and give the code samples. Whenever possible include corresponding visualizations as ASCII art."';
 
 # Terminal 2: copy and paste that output of the find-role script here, 
 # modify command as needed:

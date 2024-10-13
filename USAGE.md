@@ -31,7 +31,6 @@ In the picture above,
 Using the arrow keys on the keyboard, pick one row and press enter. The selected role definition will appear as a ready-to-run `export` command to the terminal.  
 The command `export ROLE=<prompt text>` sets a variable `ROLE`. The long prompt text is saved in a two-letter `$ROLE` environment variable.
 
-Note that the interactive selection did not _immediately_ export `ROLE` as an environment variable. You want to do that yourself, commonly after customizing the prompt manually (or by renaming the variable). Then press enter again. By exporting you can simply use the much shorter `$ROLE` in later commands.
+Note that the interactive selection did not _immediately_ export `ROLE` as an environment variable. You want to do that yourself, perhaps after customizing the prompt manually, or by renaming the variable. By exporting you can simply use the much shorter `$ROLE` in later commands/interactions with the LLM.
 
 See [EXAMPLE.md](EXAMPLE.md) for more examples.
-
