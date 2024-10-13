@@ -6,7 +6,7 @@ You need to have command-line tools `fzf`, `curl`, `perl`, `fold` and `tput` ins
 
 ## Usage as a shell script
 
-Install this script into your path, e.g. in `~/bin`. At the first run, the script will download the roles from the repository and store them in `/tmp`.
+Install the bash script `find-role` into your path, e.g. in `~/bin`. At the first run, the script will download a single csv file with my roles/prompts from the repository and store them in `/tmp`.
 
 You do not have to call it `find-role`, you can rename the script to whatever you want.
 

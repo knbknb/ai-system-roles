@@ -5,13 +5,17 @@ An opinionated list of LLM roles, or personas, grouped by topic.
 See the "roles-grouped-sorted.csv" file for the actual roles.
 ```
 
-This is my personal version of a collection of roles, also known as personas, prompt modifiers, custom instructions, or similar terms. These are for human-AI interactions with LLMs, Large Language Models such as ChatGPT.  
+This is my personal version of a collection of roles, also known as personas, prompt modifiers, custom instructions, or similar terms. These are for human-AI interactions with LLMs, Large Language Models such as ChatGPT.
 
-It works like this:
+The roles are stored in a single file and they were classified by me into groups like "Fun+Leisure", "IT-Expert", "Business", and more.
+
+Specifying a role works like this:
 
 > "As a web developer and software tester, be critical of the code input I provide and provide me with a list of issues in the code."
 
-Processing/Usage is further illustrated in [USAGE.md](./USAGE.md) below, and in the Shellscripts in the `scripts/` directory.
+... but you do this on a terminal and supply this as an additional command-line argument to the LLM.
+
+Processing/Usage is further illustrated in [USAGE.md](./USAGE.md) below, and in the Shellscripts `find-role`.
 
 ## Usage
 
