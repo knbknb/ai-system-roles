@@ -2,11 +2,11 @@
 
 ## My Personal Usage
 
-I [set up](USAGE.md) the shell script `scripts/find-role` such that it does not actually set the environment variable `CI` after interactively picking a role prompt. I can  actually export `CI` by pressing enter again.
+I [set up](USAGE.md) the shell script `scripts/find-role` such that it does not actually set the environment variable `ROLE` after interactively picking a role prompt. I can  actually export `ROLE` by pressing enter again.
 
 Thus:
 
-- I don't overwrite any existing `CI` variable (I might have set it before, and I don't want to lose the previous value).
+- I don't overwrite any existing `ROLE` variable (I might have set it before, and I don't want to lose the previous value).
 - I don't fill my environment with variables.
 
 I use these prompts/roles mainly for software development tasks:
@@ -14,7 +14,7 @@ I use these prompts/roles mainly for software development tasks:
 1. **Github Copilot Chat:** Tweak Copilot's suggestions by selecting some lines of code in your editor. Call `find-role`, pick a prompt, copy it. Paste the prompt into the Github Copilot Chat Extension for VSCode. Press enter. Github Copilot will explain, rewrite, or work with  the code lines in `#selection`, _according to your prompt._
 2. **My `explore_perplexity_api.py`  script** from the [perplexity-api-search](https://github.com/knbknb/perplexity-api-search) repo:  
    Sometimes I call `explore_perplexity_api.py` with the `--role` option.  
-The scripts then set the `CI` environment variable to the role that I want to use. Here, _"Education,"CS Bootcamp Instructor"_. This can significantly change the output of the AI system:
+The scripts then set the `ROLE` environment variable to the role that I want to use. Here, _"Education,"CS Bootcamp Instructor"_. This can significantly change the output of the AI system:
 
 ```bash
 # EXAMPLE OF A TERMINAL SESSION 
@@ -26,16 +26,16 @@ The scripts then set the `CI` environment variable to the role that I want to us
 
 # the script will print/echo the role definition as an export command
 # but will NOT actually set the environment variable:
-echo export CI='Education,"CS Bootcamp Instructor","From now on, act as an instructor in a computer science bootcamp, teaching algorithms to beginners. You will provide code examples using python programming language. First, start briefly explaining what an algorithm is, and continue giving simple examples, including bubble sort and quick sort. Later, wait for my prompt for additional questions. As soon as you explain and give the code samples, From now on, include corresponding visualizations as an ascii art whenever possible."';
+echo export ROLE='Education,"CS Bootcamp Instructor","From now on, act as an instructor in a computer science bootcamp, teaching algorithms to beginners. You will provide code examples using python programming language. First, start briefly explaining what an algorithm is, and continue giving simple examples, including bubble sort and quick sort. Later, wait for my prompt for additional questions. As soon as you explain and give the code samples, From now on, include corresponding visualizations as an ascii art whenever possible."';
 
 # Terminal 2: copy and paste that output of the find-role script here, 
 # modify command as needed:
-export CI='Education,"CS Bootcamp Instructor","From now on, act as an instructor...';
+export ROLE='Education,"CS Bootcamp Instructor","From now on, act as an instructor...';
 
 # call the script that does the heavy lifting (Query LLM and save output to a file)
 export PERPLEXITY_API_KEY=your-api-key-here
 ./explore_perplexity_api.py --prompt "Explain to a non-programmer what a REST-API is" \
-   --slug rest-api --role "$CI" --role-slug cs-instructor
+   --slug rest-api --role "$ROLE" --role-slug cs-instructor
 
 # output will be saved to a file named final-output/rest-api-<MODELNAME>.md
 ```

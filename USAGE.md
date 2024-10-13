@@ -26,11 +26,12 @@ In the picture above,
 
 - The left side shows the available roles.
 - The right side shows the best matching role.
-- The highlighted text is the selected prompt for the typed keyword(s).
+- The highlighted text is the selected prompt for the typed keywords. They go into lower left corner, near the `>`. (Typing keywords to narrow down the list is optional.)
 
-Ausing the arrow keys on the keyboard, pick one row and press enter. The script will print the role definition as a ready-to-run `export` command to the terminal. The command `export CI=<prompt text>` sets a variable `CI` - "`C`ustom `I`nstruction". The long prompt text is saved in a two-letter `$CI` environment variable.
+Using the arrow keys on the keyboard, pick one row and press enter. The selected role definition will appear as a ready-to-run `export` command to the terminal.  
+The command `export ROLE=<prompt text>` sets a variable `ROLE`. The long prompt text is saved in a two-letter `$ROLE` environment variable.
 
-Note that the interactive selection did not _immediately_ export `CI` as an environment variable. You want to do that yourself, commonly after customizing the prompt manually. Then press enter again. By exporting you can simply use the much shorter `$CI` in later commands.
+Note that the interactive selection did not _immediately_ export `ROLE` as an environment variable. You want to do that yourself, commonly after customizing the prompt manually (or by renaming the variable). Then press enter again. By exporting you can simply use the much shorter `$ROLE` in later commands.
 
 See [EXAMPLE.md](EXAMPLE.md) for more examples.
 

@@ -32,9 +32,9 @@ fi
 # Format the selected line to export it as an environment variable using Perl.
 cat $cached_file \
  | fzf --select-1 --exact -q "$1" --delimiter "\t" --preview 'echo "{1}" | fold -s -w $(tput cols)' \
- | perl -pe "s/^/export CI='/; s/\$/';/"
+ | perl -pe "s/^/export ROLE='/; s/\$/';/"
 
-# "CI" variable: Custom Instruction variable, only in scope in preview window
+# "ROLE" variable: Custom Instruction variable, only in scope in preview window
 
 # `fzf --select-1 -q "$1" --delimiter "\t"`: 
 # `fzf` is a command-line fuzzy finder. It takes the data from `curl` 
