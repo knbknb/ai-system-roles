@@ -28,17 +28,9 @@ In the picture above,
 - The right side shows the best matching role.
 - The highlighted text is the selected prompt for the typed keyword(s).
 
-Pick one row and press enter. The script will print the role definition as a ready-to-run `export` command to the terminal. The command `export CI=<prompt text>` sets a variable `CI` - "`C`ustom `I`nstruction". The long prompt text is saved in a two-letter `$CI` environment variable.
+Ausing the arrow keys on the keyboard, pick one row and press enter. The script will print the role definition as a ready-to-run `export` command to the terminal. The command `export CI=<prompt text>` sets a variable `CI` - "`C`ustom `I`nstruction". The long prompt text is saved in a two-letter `$CI` environment variable.
 
-Note that the interactive selection _did not actually export_ `CI` as an environment variable. You can do that manually by pressing enter again, if you want to use `$CI` in later commands.
+Note that the interactive selection did not _immediately_ export `CI` as an environment variable. You want to do that yourself, commonly after customizing the prompt manually. Then press enter again. By exporting you can simply use the much shorter `$CI` in later commands.
 
-See [EXAMPLE.md](EXAMPLE.md) for a more detailed example.
+See [EXAMPLE.md](EXAMPLE.md) for more examples.
 
-## More Prompts and Personas
-
-Some good collections, presented with both good Prompt Design and GUI Design in mind, and with a lot of additional information:
-
-- [Prompt Library](https://docs.anthropic.com/claude/prompt-library) by Anthropic AI for Claude LLM
-- [Prompts from top-rated GPTs in the GPTs Store](https://github.com/ai-boost/awesome-prompts) - Anonymously curated by "AI-Boost". 4.9k Stars on Guthub as of Aug. 2024.
-
-There are many, many more such collections on the web. The above two are just examples.

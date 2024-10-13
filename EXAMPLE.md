@@ -44,3 +44,12 @@ The `--slug` argument to `./explore_perplexity_api.py` is just a label I use to 
 Use any word or phrase you want as a slug, but make sure it is unique to the prompt you're using. The `--slug` should not have spaces or special characters. The same rule applies to the `--role-slug` argument which you can use to test responses to different prompts.
 
 Why all this? It enhances reproducibility and traceability of the AI-generated responses. That is useful when I take a look at the output files, perhaps many months later.
+
+## More Prompts and Personas
+
+Some good collections, presented with both good Prompt Design and GUI Design in mind, and with a lot of additional information:
+
+- [Prompt Library](https://docs.anthropic.com/claude/prompt-library) by Anthropic AI for Claude LLM
+- [Prompts from top-rated GPTs in the GPTs Store](https://github.com/ai-boost/awesome-prompts) - Anonymously curated by "AI-Boost". 4.9k Stars on Guthub as of Aug. 2024.
+
+There are many, many more such collections on the web.
