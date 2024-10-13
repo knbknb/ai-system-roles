@@ -20,9 +20,11 @@ Pick one row from the left side of the screen and press the enter key.
 |----------|
 |  Inside Terminal, after typing `find-role` this should pop up  |
 | ![fzf in action](img/screenshot-terminal-find-role.png)  |
-|  Use the arrow keys to scroll, or type more keywords to narrow down the list shown in left half  |
+|  Terminal-User-Interface (TUI) after executing `find-role` command    |
+| ![fzf in action](img/screenshot-terminal-find-role--grammar.png)  |
+|  User typed keyword "grammar", list was narrowed down. Use the arrow keys to scroll, or type more keywords to narrow down the list shown in left half |
 
-In the picture above,
+In the pictures above,
 
 - The left side shows the available roles.
 - The right side shows the best matching role.
