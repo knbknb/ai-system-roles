@@ -1,18 +1,17 @@
 # AI LLM Personas
 
 ```text
-An opinionated list of LLM , or roles, grouped by topic. 
+An opinionated list of LLM roles, or personas, grouped by topic. 
 See the "roles-grouped-sorted.csv" file for the actual roles.
 ```
 
-This is my personal version of a collection of roles, or prompt modifiers, or custom instructions. These are for interactions with LLMs, AI-systems.  
-They are not "system roles" in the sense of user interface design.
+This is my personal version of a collection of roles, also known as personas, prompt modifiers, custom instructions, or similar terms. These are for human-AI interactions with LLMs, Large Language Models such as ChatGPT.  
 
 It works like this:
 
-> "As a web developer and software tester, be critical of the input I provide and provide me with a list of issues in the code."
+> "As a web developer and software tester, be critical of the code input I provide and provide me with a list of issues in the code."
 
-Processing/Usage is further illustrated in [USAGE.md](./USAGE.md), and in the Shellscripts in the `scripts/` directory.
+Processing/Usage is further illustrated in [USAGE.md](./USAGE.md) below, and in the Shellscripts in the `scripts/` directory.
 
 ## Usage
 
