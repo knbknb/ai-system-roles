@@ -15,9 +15,7 @@ I use these prompts/roles mainly for software development tasks:
 2. **`llm` cli tool**: Using these prompt together with Simon Willison's [`llm`](https://github.com/simonw/llm/) command-line tool:  I can call `llm` with  
    `llm gpt-4o "$ROLE 'prompt text'"`.  
    This is a great, simple way to interact with AI systems from the command line, and for me was the basis for more complex scripts.
-3. **Interacting with Llama models**: The [Perplexity API endpoints](https://docs.perplexity.ai/docs/model-cards)  offer access to fine-tuned variants of Meta's important family of models, the [Llama models](https://github.com/meta-llama/).  
-   Sometimes I use my `explore_perplexity_api.py`  script  to interact with those llama LLMs. I call `explore_perplexity_api.py` with the `--role` option.  
-   See my [perplexity-api-search](https://github.com/knbknb/perplexity-api-search) for details.
+3. **Interacting with Llama models**: The [Perplexity API endpoints](https://docs.perplexity.ai/docs/model-cards)  offer access to fine-tuned variants of Meta's important family of models, the [Llama models](https://github.com/meta-llama/). Sometimes I use my `explore_perplexity_api.py`  script  to interact with those llama LLMs. I call `explore_perplexity_api.py` with the `--role` option. See Example below, or see my [perplexity-api-search](https://github.com/knbknb/perplexity-api-search) for details.
 
 The scripts then set the `ROLE` environment variable to the role that I want to use. Here, _"Education,"CS Bootcamp Instructor"_. This can significantly change the output of the AI system:
 
