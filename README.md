@@ -2,7 +2,7 @@
 
 ```text
 An opinionated list of LLM roles, or personas, grouped by topic. 
-See the "roles-grouped-sorted.csv" file for the actual roles.
+See the "data/roles-grouped-sorted.csv" file for the actual roles.
 ```
 
 This is my personal version of a collection of roles, also known as personas, prompt modifiers, custom instructions, or similar terms. These are for human-AI interactions with LLMs, Large Language Models such as ChatGPT.
