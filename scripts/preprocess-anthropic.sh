@@ -3,7 +3,7 @@
 # Preprocess the anthropic-prompts.json file
 
 # classification categories:
- csvlook -K 1   -y 3  < personas-grouped-sorted.csv | csvcut -d\| -c 2 -H | sort -u | grep "^ "
+ csvlook -K 1   -y 3  < roles-grouped-sorted.csv | csvcut -d\| -c 2 -H | sort -u | grep "^ "
 
 # ...classification was done by chatgpt-4o... - manual, interactive process
 

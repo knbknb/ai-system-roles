@@ -2,11 +2,11 @@
 
 ```text
 An opinionated list of LLM , or roles, grouped by topic. 
-See the "personas-grouped-sorted.csv" file for the actual personas.
+See the "roles-grouped-sorted.csv" file for the actual roles.
 ```
 
-This is my personal version of a collection of personas, or prompt modifiers, or custom instructions. These are for interactions with LLMs, AI-systems.  
-They are not "system personas" in the sense of user interface design.
+This is my personal version of a collection of roles, or prompt modifiers, or custom instructions. These are for interactions with LLMs, AI-systems.  
+They are not "system roles" in the sense of user interface design.
 
 It works like this:
 
