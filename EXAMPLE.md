@@ -15,28 +15,27 @@ I use these prompts/roles mainly for software development tasks:
 2. **`llm` cli tool**: Using these prompt together with Simon Willison's [`llm`](https://github.com/simonw/llm/) command-line tool:  I can call `llm` with  
    `llm gpt-4o "$ROLE 'prompt text'"`.  
    This is a great, simple way to interact with AI systems from the command line, and for me was the basis for more complex scripts.
-3. **Interacting with Llama models**: The [Perplexity API endpoints](https://docs.perplexity.ai/docs/model-cards)  offer access to fine-tuned variants of Meta's important family of models, the Llama models.  
-   Sometimes I use my `explore_perplexity_api.py`  script  to interact with those llama LLMs.
-   I call `explore_perplexity_api.py` with the `--role` option.  
+3. **Interacting with Llama models**: The [Perplexity API endpoints](https://docs.perplexity.ai/docs/model-cards)  offer access to fine-tuned variants of Meta's important family of models, the [Llama models](https://github.com/meta-llama/).  
+   Sometimes I use my `explore_perplexity_api.py`  script  to interact with those llama LLMs. I call `explore_perplexity_api.py` with the `--role` option.  
    See my [perplexity-api-search](https://github.com/knbknb/perplexity-api-search) for details.
 
 The scripts then set the `ROLE` environment variable to the role that I want to use. Here, _"Education,"CS Bootcamp Instructor"_. This can significantly change the output of the AI system:
 
-## Example of a Terminal Session 
+## Example of a Terminal Session
 
 ```bash
 # EXAMPLE OF A TERMINAL SESSION 
-# with the 2 scripts "find-role" and "explore_perplexity_api.py".
+# with the 2 scripts "find-role" and (optionally) "explore_perplexity_api.py".
 # Open two terminal windows side by side, and then:
 
 # Terminal 1: Create fzf preview window, for selecting a role, interactively
-`~/ai-system-roles/find-role`
+`. ~/ai-system-roles/find-role`
 # ... or
-`~/bin/find-role`
+`. ~/bin/find-role`
 
 # the script will print/echo the role definition as an export command
 # but will NOT actually set the environment variable:
-echo export ROLE='Education,"CS Bootcamp Instructor","From now on, act as an instructor in a computer science bootcamp, teaching algorithms to beginners. You will provide code examples using python programming language. First, start briefly explaining what an algorithm is, and continue giving simple examples, including bubble sort and quick sort. Later, wait for my prompt for additional questions. As soon as you explain and give the code samples. Whenever possible include corresponding visualizations as ASCII art."';
+echo export ROLE='Education,"CS Bootcamp Instructor","From now on, act as an instructor in a computer science bootcamp, teaching algorithms to beginners. You will provide code examples using python programming language. First, start briefly explaining what the user asked for, and continue giving simple examples. Later, wait for my prompt for additional questions. As soon as you explain and give the code samples. Whenever possible include corresponding visualizations as ASCII art."';
 
 # Terminal 2: copy and paste that output of the find-role script here, 
 # modify command as needed:
