@@ -1,4 +1,4 @@
-# AI LLM Personas
+# AI LLM Roles
 
 ```text
 An opinionated list of LLM roles, or personas, grouped by topic. 
