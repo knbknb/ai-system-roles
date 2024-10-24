@@ -13,13 +13,15 @@ Specifying a role works like this:
 
 > "As a web developer and software tester, be critical of the code input I provide and provide me with a list of issues in the code."
 
-... but you do this on a terminal and supply this as an additional command-line argument to the LLM.
+... but you do this on a terminal. Then you can copy and paste this role description and put it into the LLM's web form. Alternatively, supply this as an additional command-line argument to the LLM.
 
 Processing/Usage is further illustrated in [USAGE.md](./USAGE.md) below, and in the Shellscripts `find-role`.
 
 ## Usage
 
 How I use it in my workflow: See [USAGE.md](USAGE.md#my-personal-usage), [EXAMPLE.md](./EXAMPLE.md), and my repo [perplexity-api-search](https://github.com/knbknb/perplexity-api-search).
+
+[FOR-AND-AGAINST-PROMPTS.md](./FOR-AND-AGAINST-PROMPTS.md) is a critical re-assessment of how important these roles actually are.
 
 ## License
 
