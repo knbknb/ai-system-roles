@@ -1,6 +1,6 @@
 # FOR AND AGAINST PROMPTS
 
-## Synposis
+## Synopsis
 
 The following is from a conversation about Prompt engineering, featuring multiple perspectives from experts at Anthropic.
 
@@ -90,19 +90,19 @@ Overall, the conversation is an in-depth exploration of prompt engineering, its 
 
 The evolution of LLMs can be roughly mapped as follows:
 
-    Language Modeling (Basic Next Token Prediction)
-    Completion/Generation
-    Instruction Following
-    Chat/Dialogue
-    Reasoning/Tool Use
-    Multimodal (Current/Emerging)
-    Cross-modal reasoning
+- Language Modeling (Basic Next Token Prediction)
+- Completion/Generation
+- Instruction Following
+- Chat/Dialogue
+- Reasoning/Tool Use
+- Multimodal (Current/Emerging)
+- Cross-modal reasoning
 
 However, it's important to note that:
 
-    These capabilities often overlap and develop in parallel
-    Earlier capabilities continue to improve alongside newer ones
-    The boundaries between these stages aren't always clear-cut
-    Different models might develop these capabilities in slightly different orders
+- These capabilities often overlap and develop in parallel
+- Earlier capabilities continue to improve alongside newer ones
+- The boundaries between these stages aren't always clear-cut
+- Different models might develop these capabilities in slightly different orders
 
 The evolution is more like a continuous spectrum rather than discrete steps, with each new capability building upon and enhancing previous ones.
