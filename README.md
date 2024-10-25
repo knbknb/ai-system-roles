@@ -7,7 +7,7 @@ See the "data/roles-grouped-sorted.csv" file for the actual roles.
 
 This is my personal version of a collection of roles, also known as personas, prompt modifiers, custom instructions, or similar terms. These are for human-AI interactions with LLMs, Large Language Models such as ChatGPT.
 
-The roles are stored in a single file and they were classified by me into groups like "Fun+Leisure", "IT-Expert", "Business", and more.
+The roles are stored in a single file and were classified by me into groups like "Fun+Leisure", "IT-Expert", "Business", and more.
 
 Specifying a role works like this:
 
@@ -15,13 +15,13 @@ Specifying a role works like this:
 
 ... but you do this on a terminal. Then you can copy and paste this role description and put it into the LLM's web form. Alternatively, supply this as an additional command-line argument to the LLM.
 
-Processing/Usage is further illustrated in [USAGE.md](./USAGE.md) below, and in the Shellscripts `find-role`.
+Processing/Usage is further illustrated in [USAGE.md](./USAGE.md) below, and in the shell script `find-role`.
 
 ## Usage
 
 How I use it in my workflow: See [USAGE.md](USAGE.md#my-personal-usage), [EXAMPLE.md](./EXAMPLE.md), and my repo [perplexity-api-search](https://github.com/knbknb/perplexity-api-search).
 
-[FOR-AND-AGAINST-PROMPTS.md](./FOR-AND-AGAINST-PROMPTS.md) is a critical re-assessment of how important these roles actually are.
+[FOR-AND-AGAINST-PROMPTING.md](./FOR-AND-AGAINST-PROMPTS.md) is a critical reassessment of how important these roles actually are these days.
 
 ## License
 

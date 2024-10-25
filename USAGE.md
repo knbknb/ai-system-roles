@@ -28,11 +28,11 @@ In the pictures above:
 
 - The left side shows the available roles.
 - The right side shows the best matching role.
-- The highlighted text is the selected prompt for the typed keywords. They go into the lower-left corner, near the `>`. (Typing keywords to narrow down the list is optional.)
+- The highlighted text is the selected prompt for the typed keywords. They go into the lower-left corner, near the `>`. (Typing keywords to narrow down the list is optional but recommended for efficiency.)
 
 Using the arrow keys on the keyboard, pick one row and press enter. The selected role definition will appear as a ready-to-run `export` command in the terminal.  
-The command `export ROLE=<prompt text>` sets a variable `ROLE`. After reviewing by you, the long prompt text can be cut and pasted for usage in a web form. Optionally, save it in a four-letter `$ROLE` environment variable.
+The command `export ROLE=<prompt text>` is about to set a variable `ROLE`. You still have the opportunity to reviewing the role prompt. Then the long prompt text can be cut and pasted for usage in a web form of a chat model. Optionally, save it in a four-letter `$ROLE` environment variable, and use it in terminal commands, or in your script code.
 
-Note that the interactive selection did not _immediately_ export `ROLE` as an environment variable. You want to do that yourself, perhaps after customizing the prompt manually or by renaming the variable. By exporting, you can simply use the much shorter `$ROLE` in later commands/interactions with the LLM.
+Again, note that the interactive selection did not _immediately_ export `ROLE` as an environment variable. You want to do that yourself, perhaps after renaming the variable. By `export`ing, you can simply use the much shorter `$ROLE` in later commands/interactions with the LLM.
 
 See [EXAMPLE.md](EXAMPLE.md) for more examples.
