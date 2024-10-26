@@ -21,7 +21,7 @@ Processing/Usage is further illustrated in [USAGE.md](./USAGE.md) below, and in 
 
 How I use it in my workflow: See [USAGE.md](USAGE.md#my-personal-usage), [EXAMPLE.md](./EXAMPLE.md), and my repo [perplexity-api-search](https://github.com/knbknb/perplexity-api-search).
 
-[FOR-AND-AGAINST-PROMPTING.md](./FOR-AND-AGAINST-PROMPTS.md) is a critical reassessment of how important these roles actually are these days.
+[FOR-AND-AGAINST-PROMPTING.md](./FOR-AND-AGAINST-PROMPTING.md)  describes why such roles are becoming less important these days, actually.
 
 ## License
 
