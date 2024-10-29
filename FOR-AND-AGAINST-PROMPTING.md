@@ -37,7 +37,7 @@ See podcast video [AI prompt engineering: A deep dive](https://www.youtube.com/w
 - Learn something from the interaction (thinking and reflecting) itself, not necessarily from the LLM's output.
 - Know when to stop grinding and polish the prompt. The mythically perfect prompt is almost never necessary.
 - Describe in general terms how those edge cases should be handled.
-- Give the model the option to provide a way "out" gracefully if it cannot do the task. Saying "I don't know" is a valid answer.
+- Give the model the option to provide "a way out" gracefully, if it cannot do the task. Allow it to saying "I don't know", that's a valid answer.
 - Can work with text prompts but also with images even if the techniques are different (multi-shot prompting does not work as well for images).
 - For API tasks, can balance polishing the code and polishing the prompt.
 - For API tasks, can get the prompt right such that it can be called millions of times and still work reliably (unlike one-off personal tasks).
@@ -109,8 +109,7 @@ However, it's important to note that:
 
 The evolution is more like a continuous spectrum rather than discrete steps, with each new capability building upon and enhancing previous ones.
 
-
-References:
+## References
 
 - [AI prompt engineering: A deep dive](https://www.youtube.com/watch?v=T9aRN5JkmL8)
 - [The Metacognitive Demands and Opportunities of Generative AI](https://arxiv.org/abs/2312.10893) Tankelevitch, Lev and Kewenig, Viktor and Simkute, Auste and Scott, Ava Elizabeth and Sarkar, Advait and Sellen, Abigail and Rintel, Sean. in: Proceedings of the CHI Conference on Human Factors in Computing Systems, ACM, 2024, 1–24.
