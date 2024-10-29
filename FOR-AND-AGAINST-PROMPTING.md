@@ -6,6 +6,8 @@ The following is from a conversation about prompt engineering, featuring multipl
 
 See podcast video [AI prompt engineering: A deep dive](https://www.youtube.com/watch?v=T9aRN5JkmL8) from September 2024.
 
+**Note to self:** A much, much deeper dive can be found here [The Metacognitive Demands and Opportunities of Generative AI](https://arxiv.org/abs/2312.10893). Some ideas from this paper are also included in my notes, but where not mentioned in the conversation.
+
 ## Summary
 
 ### What prompt engineering entails
@@ -106,3 +108,9 @@ However, it's important to note that:
 - Different models might develop these capabilities in slightly different orders.
 
 The evolution is more like a continuous spectrum rather than discrete steps, with each new capability building upon and enhancing previous ones.
+
+
+References:
+
+- [AI prompt engineering: A deep dive](https://www.youtube.com/watch?v=T9aRN5JkmL8)
+- [The Metacognitive Demands and Opportunities of Generative AI](https://arxiv.org/abs/2312.10893) Tankelevitch, Lev and Kewenig, Viktor and Simkute, Auste and Scott, Ava Elizabeth and Sarkar, Advait and Sellen, Abigail and Rintel, Sean. in: Proceedings of the CHI Conference on Human Factors in Computing Systems, ACM, 2024, 1–24.
