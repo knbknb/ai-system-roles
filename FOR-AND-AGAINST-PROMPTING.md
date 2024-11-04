@@ -1,4 +1,4 @@
-# FOR AND AGAINST PROMPTS
+# FOR AND AGAINST PROMPTING
 
 ## Synopsis
 
@@ -6,17 +6,16 @@ The following is from a conversation about prompt engineering, featuring multipl
 
 See podcast video [AI prompt engineering: A deep dive](https://www.youtube.com/watch?v=T9aRN5JkmL8) from September 2024.
 
-**Note to self:** A much, much deeper dive can be found here [The Metacognitive Demands and Opportunities of Generative AI](https://arxiv.org/abs/2312.10893). Some ideas from this paper are also included in my notes, but where not mentioned in the conversation.
-
 ## Summary
 
 ### What prompt engineering entails
 
 - Letting users get things done that they wouldn't be able to do otherwise.
-- Definition: a way of communicating clearly with models. Transform a complex task or piece of information and make it accessible to an educated layperson.
+- a way of communicating clearly with models. Transform a complex task or piece of information and make it accessible to an educated layperson.
 - Needs experimentation and iteration.
 - Allow users to revert to a clean slate and refine prompts.
 - Avoid overcomplicating things. Do not build crazy abstractions. Just write a clear description of the task. "We write essays and treat them like code".
+- Participants gave no strict definition of what a prompt is. See 
 
 ### Prompts in enterprise applications
 
@@ -111,5 +110,7 @@ The evolution is more like a continuous spectrum rather than discrete steps, wit
 
 ## References
 
-- [AI prompt engineering: A deep dive](https://www.youtube.com/watch?v=T9aRN5JkmL8)
+- [AI prompt engineering: A deep dive](https://www.youtube.com/watch?v=T9aRN5JkmL8) - Source of the conversation.
 - [The Metacognitive Demands and Opportunities of Generative AI](https://arxiv.org/abs/2312.10893) Tankelevitch, Lev and Kewenig, Viktor and Simkute, Auste and Scott, Ava Elizabeth and Sarkar, Advait and Sellen, Abigail and Rintel, Sean. in: Proceedings of the CHI Conference on Human Factors in Computing Systems, ACM, 2024, 1–24.
+  - A much deeper dive into prompting and interacting with Generative AI.
+- [The Prompt Report: A Systematic Survey of Prompting Techniques](https://arxiv.org/abs/2406.06608) - In the appendix of this report, there is a list of prompt definitions from various sources.
