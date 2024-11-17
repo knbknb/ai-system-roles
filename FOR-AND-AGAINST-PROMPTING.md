@@ -14,8 +14,8 @@ See podcast video [AI prompt engineering: A deep dive](https://www.youtube.com/w
 - a way of communicating clearly with models. Transform a complex task or piece of information and make it accessible to an educated layperson.
 - Needs experimentation and iteration.
 - Allow users to revert to a clean slate and refine prompts.
-- Avoid overcomplicating things. Do not build crazy abstractions. Just write a clear description of the task. "We write essays and treat them like code".
-- Participants gave no strict definition of what a prompt is. See 
+- Avoid overcomplicating things. Just write a clear description of the task. "We write essays and treat them like code".  Do not build crazy abstractions.
+- Podcast Participants gave no strict, formal definition of what a prompt is. (See Appendix of [The Prompt Report: A Systematic Survey of Prompting Techniques](https://arxiv.org/abs/2406.06608) for many such definitions.)
 
 ### Prompts in enterprise applications
 
@@ -45,6 +45,17 @@ See podcast video [AI prompt engineering: A deep dive](https://www.youtube.com/w
 
 Participants note the importance of understanding real-world inputs, as users may not provide perfectly structured inputs, unlike typical evaluation cases. Often the input is even incomprehensible, minimalistic, when users fall into (bad) chatting habits from talking to humans (no punctuation, many typos, implicit assumptions, unclear instructions that even a fellow human would not understand...).
 
+### The nature of prompts
+
+- Should be seen as natural language code or something else.
+- Describe the task really well with nuance and context, important to _you_.
+
+### The effectiveness of providing models with context or roles
+
+Model reliability, the potential of models to handle varied inputs, and how to craft prompts that are robust enough for enterprise-level deployment. There’s a focus on understanding the psychology of models, emphasizing the need for detailed communication, and stepping back to analyze the complete set of information required for tasks.
+
+- (e.g., telling a model it's a teacher grading an assignment) and the extent to which models should be treated as intelligent entities that can be honest about tasks.
+
 ### Evolution of Prompt Engineering
 
 - Past: More reliance on "hacks" and tricks. "Persona engineering" getting less common.
@@ -54,18 +65,6 @@ Participants note the importance of understanding real-world inputs, as users ma
   - Jailbreaking the model, getting it to do things it wasn't designed to do, can be insightful. Needs some knowledge of how the LLM works internally.
 
 Models gradually improve at handling complex prompts. Prompt engineering is akin to programming, where precision and version control are crucial.
-
-### The nature of prompts
-
-- Should be seen as natural language code or something else.
-- Describe the task really well with nuance and context, important to _you_.
-- Image prompts: ask the model to assign a high-school grade to an image—surprisingly, that works well.
-
-### The effectiveness of providing models with context or roles
-
-Model reliability, the potential of models to handle varied inputs, and how to craft prompts that are robust enough for enterprise-level deployment. There’s a focus on understanding the psychology of models, emphasizing the need for detailed communication, and stepping back to analyze the complete set of information required for tasks.
-
-- (e.g., telling a model it's a teacher grading an assignment) and the extent to which models should be treated as intelligent entities that can be honest about tasks.
 
 ### The future of prompt engineering
 
@@ -87,6 +86,8 @@ Overall, the conversation is an in-depth exploration of prompt engineering, its 
 
 --------------------------------------------
 
+(not in the conversation, but related)
+
 ### Evolution of LLMs
 
 The evolution of LLMs can be roughly mapped as follows:
@@ -106,6 +107,10 @@ However, it's important to note that:
 - The boundaries between these stages aren't always clear-cut.
 - Different models might develop these capabilities in slightly different orders.
 
+- Multimodal and cross-modal reasoning require different prompts and interactions than earlier stages.
+  - Example: Image prompts: ask the model to assign a high-school grade to an image—surprisingly, that works well.
+  - A larger framework and research opportunities are described in [The Metacognitive Demands and Opportunities of Generative AI](https://arxiv.org/abs/2312.10893)
+  
 The evolution is more like a continuous spectrum rather than discrete steps, with each new capability building upon and enhancing previous ones.
 
 ## References

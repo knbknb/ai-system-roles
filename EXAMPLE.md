@@ -1,13 +1,15 @@
 # EXAMPLE.md
 
+## Review before exporting
+
+I [set up](USAGE.md) the shell script `scripts/find-role` such that you must review the output the script returns. The `find-role` script  does _not actually set_ the environment variable `ROLE` after interactively picking a role prompt. _After reviewing_, export environment variable `ROLE` by pressing "enter" again.
+
+This way:
+
+- I don't overwrite any pre-existing `ROLE` variable (I might have set it before, and I don't want to lose its previous value).
+- I don't needlessly fill my environment with variables.
+
 ## My Personal Usage
-
-I [set up](USAGE.md) the shell script `scripts/find-role` such that it does not actually set the environment variable `ROLE` after interactively picking a role prompt. I can actually export `ROLE` by pressing enter again.
-
-Therefore:
-
-- I don't overwrite any existing `ROLE` variable (I might have set it before, and I don't want to lose the previous value).
-- I don't fill my environment with variables.
 
 I use these prompts/roles mainly for software development tasks:
 
@@ -19,7 +21,7 @@ I use these prompts/roles mainly for software development tasks:
 
 The scripts then set the `ROLE` environment variable to the role that I want to use. Here I use the role labeled _"Education,"CS Bootcamp Instructor"_. This can significantly change the output of the AI system:
 
-## Example of a Terminal Session
+## Illustrated Example of a Terminal Session
 
 ```bash
 # EXAMPLE OF A TERMINAL SESSION 

@@ -13,15 +13,15 @@ Specifying a role works like this:
 
 > "As a web developer and software tester, be critical of the code input I provide and provide me with a list of issues in the code."
 
-... but you do this on a terminal. Then you can copy and paste this role description and put it into the LLM's web form. Alternatively, supply this as an additional command-line argument to the LLM.
+... but you do this on a terminal. Then you can copy this role description, paste it into the LLM's web form, review and extend the prompt. Alternatively, supply your selection as an additional command-line argument to the LLM, or use it in API-calling code.
 
 Processing/Usage is further illustrated in [USAGE.md](./USAGE.md) below, and in the shell script `find-role`.
 
 ## Usage
 
-How I use it in my workflow: See [USAGE.md](USAGE.md#my-personal-usage), [EXAMPLE.md](./EXAMPLE.md), and my repo [perplexity-api-search](https://github.com/knbknb/perplexity-api-search).
+How I use it in my workflow: See [USAGE.md](USAGE.md#my-personal-usage) for an illustrated description, [EXAMPLE.md](./EXAMPLE.md) for simple examples, and my repo [perplexity-api-search](https://github.com/knbknb/perplexity-api-search) for a convoluted example.
 
-[FOR-AND-AGAINST-PROMPTING.md](./FOR-AND-AGAINST-PROMPTING.md)  describes why such roles are becoming less important these days, actually.
+[FOR-AND-AGAINST-PROMPTING.md](./FOR-AND-AGAINST-PROMPTING.md) are my notes about prompting. They mention why role-prompting is becoming _less_ important these days, actually.
 
 ## License
 
