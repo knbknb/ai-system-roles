@@ -116,6 +116,6 @@ The evolution is more like a continuous spectrum rather than discrete steps, wit
 ## References
 
 - [AI prompt engineering: A deep dive](https://www.youtube.com/watch?v=T9aRN5JkmL8) - Source of the conversation.
-- [The Metacognitive Demands and Opportunities of Generative AI](https://arxiv.org/abs/2312.10893) Tankelevitch, Lev and Kewenig, Viktor and Simkute, Auste and Scott, Ava Elizabeth and Sarkar, Advait and Sellen, Abigail and Rintel, Sean. in: Proceedings of the CHI Conference on Human Factors in Computing Systems, ACM, 2024, 1–24.
+- [The Metacognitive Demands and Opportunities of Generative AI](https://arxiv.org/abs/2312.10893) Tankelevitch, Lev and Kewenig, Viktor and Simkute, Auste and Scott, Ava Elizabeth and Sarkar, Advait and Sellen, Abigail and Rintel, Sean. in: Proceedings of the CHI Conference on Human Factors in Computing Systems, ACM, 2024, 1–24. - Everything on a more abstract level.
   - A much deeper dive into prompting and interacting with Generative AI.
 - [The Prompt Report: A Systematic Survey of Prompting Techniques](https://arxiv.org/abs/2406.06608) - In the appendix of this report, there is a list of prompt definitions from various sources.

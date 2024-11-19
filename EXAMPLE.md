@@ -63,6 +63,5 @@ Why all this? It enhances reproducibility and traceability of the AI-generated r
 Some good collections, presented with both good Prompt Design and GUI Design in mind, and with a lot of additional information:
 
 - [Prompt Library](https://docs.anthropic.com/claude/prompt-library) by Anthropic AI for Claude LLM
-- [Prompts from top-rated GPTs in the GPTs Store](https://github.com/ai-boost/awesome-prompts) - Anonymously curated by "AI-Boost". 4.9k Stars on GitHub as of Aug. 2024.
-
-There are many, many more such collections on the web.
+- [Prompts from top-rated GPTs in the GPTs Store](https://github.com/ai-boost/awesome-prompts) - Anonymously curated by "AI-Boost". 4.9k Stars on GitHub as of Aug. 2024. There a re many collections like this on the web.
+- [Prompt Engineering](https://github.com/NirDiamant/Prompt_Engineering) - Curated by Nir Diamant. Useful and comprehensive set of tutorials and implementations. 1.9k Stars on GitHub as of Nov. 2024.
