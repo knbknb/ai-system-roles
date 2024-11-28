@@ -94,7 +94,7 @@ The evolution of LLMs can be roughly mapped as follows:
 
 - Language Modeling (Basic Next Token Prediction)
 - Completion/Generation
-- Instruction Following
+- Instruction Following ("Summarize this text")
 - Chat/Dialogue
 - Reasoning/Tool Use
 - Multimodal (Current/Emerging)
@@ -108,11 +108,13 @@ However, it's important to note that:
 - Different models might develop these capabilities in slightly different orders.
 
 - Multimodal and cross-modal reasoning require different prompts and interactions than earlier stages.
-  - Example: Image prompts: ask the model to assign a high-school grade to an image—surprisingly, that works well.
-  - A larger framework and research opportunities are described in [The Metacognitive Demands and Opportunities of Generative AI](https://arxiv.org/abs/2312.10893)
+  - Example: Reasoning prompts: ask the model to explain its reasoning or provide a justification for its answer. These are longer and require more context.
+  - Example: Image prompts: ask the model to describe the image in a certain style.
   
 The evolution is more like a continuous spectrum rather than discrete steps, with each new capability building upon and enhancing previous ones.
 
+A larger framework for Human-AI interaction and research opportunities are described in [The Metacognitive Demands and Opportunities of Generative AI](https://arxiv.org/abs/2312.10893)
+  
 ## References
 
 - [AI prompt engineering: A deep dive](https://www.youtube.com/watch?v=T9aRN5JkmL8) - Source of the conversation.
