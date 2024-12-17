@@ -1,4 +1,10 @@
-# AI LLM Roles
+## Obsolete
+
+**Now you can use the super-smart System Message Generator on [playground.openai.com](playground.openai.com) generate such prompts interactively.**
+
+**Anyways, it was a great idea to have a list of roles for LLMs, but now it's not needed anymore.**
+
+## AI LLM Roles
 
 ```text
 An opinionated list of LLM roles, or personas, grouped by topic. 
@@ -21,7 +27,11 @@ Processing/Usage is further illustrated in [USAGE.md](./USAGE.md) below, and in 
 
 How I use it in my workflow: See [USAGE.md](USAGE.md#my-personal-usage) for an illustrated description, [EXAMPLE.md](./EXAMPLE.md) for simple examples, and my repo [perplexity-api-search](https://github.com/knbknb/perplexity-api-search) for a convoluted example.
 
-[FOR-AND-AGAINST-PROMPTING.md](./FOR-AND-AGAINST-PROMPTING.md) are my notes about prompting. They mention why role-prompting is becoming _less_ important these days, actually.
+[FOR-AND-AGAINST-PROMPTING.md](./FOR-AND-AGAINST-PROMPTING.md) are my notes about prompting. They mention why role-prompting is becoming _less_ important these days, actually. It even might become obsolete.
+
+## Obsolete
+
+Now you can use the super-smart System Message Generator on [playground.openai.com](playground.openai.com) generate such prompts interactively.
 
 ## License
 
