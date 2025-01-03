@@ -10,6 +10,8 @@ See podcast video [AI prompt engineering: A deep dive](https://www.youtube.com/w
 
 ### What prompt engineering entails
 
+Mixed perspectives: here, 'users' are prompt engineers, but also LLM creators/finetuners, Chatbot GUI designers and HCI experts.
+
 - Help humans solve problems, enhance their thinking, let users get things done that they wouldn't be able to do otherwise.
 - A way of communicating clearly with models. Transform a complex task or piece of information and make it accessible to an educated layperson.
 - Needs experimentation and iteration.

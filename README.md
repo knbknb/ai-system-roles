@@ -30,7 +30,7 @@ Processing/Usage is further illustrated in [USAGE.md](./USAGE.md) below, and in 
 
 ## Usage
 
-How I use it in my workflow: See [USAGE.md](USAGE.md#my-personal-usage) for an illustrated description, [EXAMPLE.md](./EXAMPLE.md) for simple examples, and my repo [perplexity-api-search](https://github.com/knbknb/perplexity-api-search) for a convoluted example.
+How I use it in my workflow: See [USAGE.md](USAGE.md#my-personal-usage) for an illustrated description, [EXAMPLE.md](./EXAMPLE.md) for simple examples, and my repo [perplexity-api-search](https://github.com/knbknb/perplexity-api-search) for a convoluted example. (TODO also obsolete? due to API changes).
 
 [FOR-AND-AGAINST-PROMPTING.md](./FOR-AND-AGAINST-PROMPTING.md) are my notes about prompting. They mention why role-prompting is becoming _less_ important these days, actually. It even might become obsolete, or counterproductive, for newer Reasoning Models (such as the OpenAI o1 series of LLMs).
 

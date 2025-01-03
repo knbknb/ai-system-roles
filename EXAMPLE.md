@@ -34,6 +34,9 @@ The scripts then set the `ROLE` environment variable to the role that I want to 
 # ... or
 `. ~/bin/find-role`
 
+# ...select a line from the list of roles, 
+# as shown in the fzf preview window, see screemshot above...
+
 # the script will print/echo the role definition as an export command
 # but will NOT actually set the environment variable:
 echo export ROLE='Education,"CS Bootcamp Instructor","From now on, act as an instructor in a computer science bootcamp, teaching algorithms to beginners. You will provide code examples using the Python programming language. First, start briefly explaining what the user asked for, and continue giving simple examples. Later, wait for my prompt for additional questions. Then you explain and give code examples. Whenever possible include corresponding visualizations as ASCII art."';
