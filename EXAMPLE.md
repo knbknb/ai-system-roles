@@ -6,20 +6,21 @@ I [set up](USAGE.md) the shell script `scripts/find-role` such that you must rev
 
 This way:
 
-- I don't overwrite any pre-existing `ROLE` variable (I might have set it before, and I don't want to lose its previous value).
-- I don't needlessly fill my environment with variables.
+- No shell commands are issued without your consent.
+- We don't overwrite any pre-existing `ROLE` variable (I might have set it before, and I don't want to lose its previous value).
+- We don't needlessly fill the shell environment with variables that might not be used, or trip us up later.
 
 ## My Personal Usage
 
-I use these prompts/roles mainly for software development tasks:
+I use these prompts/roles mainly for these tasks:
 
-1. **GitHub Copilot Chat:** Tweak Copilot's suggestions by selecting some lines of code in your editor. Call `find-role`, pick a prompt, copy it. Paste the prompt into the GitHub Copilot Chat Extension for VSCode and press enter. GitHub Copilot will explain, rewrite, or work with  the code lines in `#selection`, _according to your prompt_.
-2. **`llm` cli tool**: I often use these prompts together with Simon Willison's [`llm`](https://github.com/simonw/llm/) command-line tool. I can call `llm` with  
+1. **Interacting with LLMs via the Browser**: Classic mode of interaction with LLMs such as ChatGPT.
+2. **GitHub Copilot Chat:** Tweak Copilot's suggestions by selecting some lines of code in your editor. Call `find-role`, pick a prompt, copy it. Paste the prompt into the GitHub Copilot Chat Extension for VSCode and press enter. GitHub Copilot will explain, rewrite, or work with  the code lines in `#selection`, _according to your prompt_.
+3. **`llm` cli tool**: I often use these prompts together with Simon Willison's [`llm`](https://github.com/simonw/llm/) command-line tool. I can call `llm` with  
    `llm gpt-4o "$ROLE 'prompt text'"`.  
    This is a great, simple way to interact with AI systems from the command line, and for me was the basis for more complex scripts.
-3. **Interacting with Llama models**: The [Perplexity API endpoints](https://docs.perplexity.ai/docs/model-cards)  offer access to fine-tuned variants of Meta's important family of models, the [Llama models](https://github.com/meta-llama/). Sometimes I use my `explore_perplexity_api.py`  script  to interact with those Llama LLMs. I call `explore_perplexity_api.py` with the `--role` option. See example below, or see my [perplexity-api-search](https://github.com/knbknb/perplexity-api-search) for details.
 
-The scripts then set the `ROLE` environment variable to the role that I want to use. Here I use the role labeled _"Education,"CS Bootcamp Instructor"_. This can significantly change the output of the AI system:
+The scripts then set the `ROLE` environment variable to the role that I want to use. Here I use the role labeled _"Education,"CS Bootcamp Instructor"_. This can significantly change the output of the AI system.
 
 ## Illustrated Example of a Terminal Session
 
@@ -41,22 +42,11 @@ echo export ROLE='Education,"CS Bootcamp Instructor","From now on, act as an ins
 # modify command as needed:
 export ROLE='Education,"CS Bootcamp Instructor","From now on, act as an instructor...';
 
-# call the script that does the heavy lifting (Query LLM and save output to a file)
-export PERPLEXITY_API_KEY=your-api-key-here
-./explore_perplexity_api.py --prompt "Explain to a non-programmer what a REST-API is" \
-   --slug rest-api --role "$ROLE" --role-slug cs-instructor
-
-# output will be saved to a file named final-output/rest-api-<MODELNAME>.md
+# call the llm cli tool, 
+# output will be shown in terminal and also saved to a file 
+export OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+llm -m 4o-mini -s "$ROLE"  "Explain to a non-programmer what a REST-API is"  | tee > /var/tmp/rest-explanation.txt
 ```
-
-## My personal setup
-
-**The --slug argument and --role-slug arguments**
-
-The `--slug` argument to `./explore_perplexity_api.py` is just a label I use to keep track of my interactions with the AI systems and the prompts I've used. The value of `--slug` becomes part of the output filename.  
-Use any word or phrase you want as a slug, but make sure it is unique to the prompt you're using. The `--slug` should not have spaces or special characters. The same rule applies to the `--role-slug` argument which you can use to test responses to different prompts.
-
-Why all this? It enhances reproducibility and traceability of the AI-generated responses. That is useful when I take a look at the output files, perhaps many months later.
 
 ## More Prompts and Personas
 

@@ -32,12 +32,12 @@ Processing/Usage is further illustrated in [USAGE.md](./USAGE.md) below, and in 
 
 How I use it in my workflow: See [USAGE.md](USAGE.md#my-personal-usage) for an illustrated description, [EXAMPLE.md](./EXAMPLE.md) for simple examples, and my repo [perplexity-api-search](https://github.com/knbknb/perplexity-api-search) for a convoluted example.
 
-[FOR-AND-AGAINST-PROMPTING.md](./FOR-AND-AGAINST-PROMPTING.md) are my notes about prompting. They mention why role-prompting is becoming _less_ important these days, actually. It even might become obsolete.
+[FOR-AND-AGAINST-PROMPTING.md](./FOR-AND-AGAINST-PROMPTING.md) are my notes about prompting. They mention why role-prompting is becoming _less_ important these days, actually. It even might become obsolete, or counterproductive, for newer Reasoning Models (such as the OpenAI o1 series of LLMs).
 
 ## Obsolete
 
-Now you can use the super-smart System Message Generator on [playground.openai.com](playground.openai.com) generate such prompts interactively.
-
+Now you can use the super-smart System Message Generator on [playground.openai.com](playground.openai.com) generate such prompts interactively.  
+(In Playground sidebar, click on "Chat". In Main Panel, near "System Message", click on the "sparkling stars" icon.)
 ## License
 
 CC-0, see [LICENSE](./LICENSE) file.

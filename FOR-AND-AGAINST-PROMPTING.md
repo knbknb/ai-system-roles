@@ -10,36 +10,38 @@ See podcast video [AI prompt engineering: A deep dive](https://www.youtube.com/w
 
 ### What prompt engineering entails
 
-- Letting users get things done that they wouldn't be able to do otherwise.
-- a way of communicating clearly with models. Transform a complex task or piece of information and make it accessible to an educated layperson.
+- Help humans solve problems, enhance their thinking, let users get things done that they wouldn't be able to do otherwise.
+- A way of communicating clearly with models. Transform a complex task or piece of information and make it accessible to an educated layperson.
 - Needs experimentation and iteration.
 - Allow users to revert to a clean slate and refine prompts.
 - Avoid overcomplicating things. Just write a clear description of the task. "We write essays and treat them like code".  Do not build crazy abstractions.
-- Podcast Participants gave no strict, formal definition of what a prompt is. (See Appendix of [The Prompt Report: A Systematic Survey of Prompting Techniques](https://arxiv.org/abs/2406.06608) for many such definitions.)
+- (Podcast Participants gave no strict, formal definition of what a prompt is. - See Appendix of [The Prompt Report: A Systematic Survey of Prompting Techniques](https://arxiv.org/abs/2406.06608) for many such definitions.)
 
 ### Prompts in enterprise applications
 
 - An engineering aspect comes from integrating the workflow into the customers' larger systems as a whole.
 - It often involves more than just a single prompt.
-- More features like the availability of RAG, tools, and APIs also matter in enterprise applications.
-- Latency issues, rate limits, and upload limits.
-- Engineers need to perform well in a _3-role_ relationship: the user, the model, and the prompt engineer.
+- More features also matter in enterprise applications.
+  - e.g., the availability of RAG, Tools and APIs.
+  - Latency issues, rate limits, and upload limits.
+- Prompt Engineers need to perform well in a _3-role_ relationship: the business user/employee, the model, and the prompt engineer.
 
 ### What makes a good prompt engineer?
 
 - Actually enjoy the process of interacting with the model. Pushing it to its limits.
-- Clear communication, clear specifications, and understanding the task.
+- Clear communication, brief context specifications, and an understanding the task at hand.
 - The ability to iterate, often for very long conversations.
-- The ability to provide a full fact set to the model, but not too much.
+- The ability to provide a full fact set and good examples, to the model, but not too much.
 - Anticipate edge cases or potential misinterpretations, being aware of one's own assumptions.
+  - Describe in general terms how those edge cases should be handled.
+  - Give the model the option to provide "a way out" gracefully, if it cannot do the task. For example, allow it to say "I don't know", when that's a valid answer.
 - Closely read/look at the model's output and adjust the prompt accordingly. Experiment further.
-- Learn something from the interaction (thinking and reflecting) itself, not necessarily from the LLM's output.
+- Improve own thinking, learn something from the interaction (thinking and reflecting) itself, not necessarily from the LLM's output.
 - Know when to stop grinding and polish the prompt. The mythically perfect prompt is almost never necessary.
-- Describe in general terms how those edge cases should be handled.
-- Give the model the option to provide "a way out" gracefully, if it cannot do the task. Allow it to saying "I don't know", that's a valid answer.
 - Can work with text prompts but also with images even if the techniques are different (multi-shot prompting does not work as well for images).
-- For API tasks, can balance polishing the code and polishing the prompt.
-- For API tasks, can get the prompt right such that it can be called millions of times and still work reliably (unlike one-off personal tasks).
+- For API tasks
+  - can balance polishing the code and polishing the prompt.
+  - can get the prompt right such that it can be called millions of times and still work reliably (unlike one-off personal tasks).
 - Know how to interact with an unfinished pretrained model; they are different from a fine-tuned model. Know the difference between prompting a consumer model (reliability) and a research model (focus on diversity).
 - Know how to apply meta-prompting: e.g., give an LLM a paper about a new prompt engineering technique and ask it to summarize it and give examples, a template, questions for other models, etc.
 
@@ -86,7 +88,7 @@ Overall, the conversation is an in-depth exploration of prompt engineering, its 
 
 --------------------------------------------
 
-(not in the conversation, but related)
+(Not in the conversation, but related)
 
 ### Evolution of LLMs
 
@@ -117,8 +119,9 @@ A larger framework for Human-AI interaction and research opportunities are descr
   
 ## References
 
-- [AI prompt engineering: A deep dive](https://www.youtube.com/watch?v=T9aRN5JkmL8) - Source of the conversation.
+- [AI prompt engineering: A deep dive](https://www.youtube.com/watch?v=T9aRN5JkmL8) - **Poccast conversation, source of the notes above**.
 - [The Metacognitive Demands and Opportunities of Generative AI](https://arxiv.org/abs/2312.10893) Tankelevitch, Lev and Kewenig, Viktor and Simkute, Auste and Scott, Ava Elizabeth and Sarkar, Advait and Sellen, Abigail and Rintel, Sean. in: Proceedings of the CHI Conference on Human Factors in Computing Systems, ACM, 2024, 1–24.
-  - Everything on a more abstract level.
-  - A much deeper dive into prompting and interacting with Generative AI.
-- [The Prompt Report: A Systematic Survey of Prompting Techniques](https://arxiv.org/abs/2406.06608) - In the appendix of this report, there is a list of prompt definitions from various sources.
+  - A much deeper dive into prompting and interacting with Generative AI, on a more abstract level.
+  - Expert paper, from a Human-Computer Interaction research perspective
+- [The Prompt Report: A Systematic Survey of Prompting Techniques](https://arxiv.org/abs/2406.06608)
+  - In the appendix of this report, there is a list of "formal" _prompt definitions_, sourced from the research literature.
