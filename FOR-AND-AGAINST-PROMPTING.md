@@ -16,7 +16,7 @@ Mixed perspectives: here, 'users' are prompt engineers, but also LLM creators/fi
 - A way of communicating clearly with models. Transform a complex task or piece of information and make it accessible to an educated layperson.
 - Needs experimentation and iteration.
 - Allow users to revert to a clean slate and refine prompts.
-- Avoid overcomplicating things. Just write a clear description of the task. "We write essays and treat them like code".  Do not build crazy abstractions.
+- Avoid overcomplicating things. Just write a clear description of the task.
 - (Podcast Participants gave no strict, formal definition of what a prompt is. - See Appendix of [The Prompt Report: A Systematic Survey of Prompting Techniques](https://arxiv.org/abs/2406.06608) for many such definitions.)
 
 ### Prompts in enterprise applications
@@ -52,7 +52,10 @@ Participants note the importance of understanding real-world inputs, as users ma
 ### The nature of prompts
 
 - Should be seen as natural language code or something else.
-- Describe the task really well with nuance and context, important to _you_.
+- Describe the task really well with nuance and context, important to _you_ for the task at hand. "Write essays and treat them like code".
+- Do not build crazy abstractions and  do not use complex prompt engineering techniques unless  necessary.
+- Prompt engineering is akin to programming, where precision and version control are crucial.
+  - also API/Function  calling  
 
 ### The effectiveness of providing models with context or roles
 
@@ -67,8 +70,9 @@ Model reliability, the potential of models to handle varied inputs, and how to c
 - Ongoing Shift: Moving from individual clever solutions to structured, repeatable systems.
   - Chain-of-thought prompts and now reasoning prompts just work; this needs some time to get used to. Full understanding of why is not always possible.
   - Jailbreaking the model, getting it to do things it wasn't designed to do, can be insightful. Needs some knowledge of how the LLM works internally.
+- See also at end of page: Evolutions of LLMs
 
-Models gradually improve at handling complex prompts. Prompt engineering is akin to programming, where precision and version control are crucial.
+Models gradually improve at handling complex prompts.
 
 ### The future of prompt engineering
 
@@ -94,7 +98,9 @@ Overall, the conversation is an in-depth exploration of prompt engineering, its 
 
 ### Evolution of LLMs
 
-The evolution of LLMs can be roughly mapped as follows:
+**The following evolution of LLMs implies that many diffferent prompt engineering skills and techniques are needed to interact with them.**
+
+The timeline can be roughly mapped as follows:
 
 - Language Modeling (Basic Next Token Prediction)
 - Completion/Generation
