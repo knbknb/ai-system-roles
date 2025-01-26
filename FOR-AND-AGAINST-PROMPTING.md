@@ -6,6 +6,9 @@ The following is from a conversation about prompt engineering, featuring multipl
 
 See podcast video [AI prompt engineering: A deep dive](https://www.youtube.com/watch?v=T9aRN5JkmL8) from September 2024.
 
+**Over time, this was extended with additional insights by me, based on other sources.**  
+**Not all of the following is directly from the podcast.**
+
 ## Summary
 
 ### What prompt engineering entails
@@ -23,7 +26,8 @@ Mixed perspectives: here, 'users' are prompt engineers, but also LLM creators/fi
 
 - An engineering aspect comes from integrating the workflow into the customers' larger systems as a whole.
 - It often involves more than just a single prompt.
-- More features also matter in enterprise applications.
+- More features also matter in enterprise applications/enterprise prompts.
+  - Prompts tend to be much longer, more structured, templated, ...
   - e.g., the availability of RAG, Tools and APIs.
   - Latency issues, rate limits, and upload limits.
 - Prompt Engineers need to perform well in a _3-role_ relationship: the business user/employee, the model, and the prompt engineer.
@@ -40,7 +44,7 @@ Mixed perspectives: here, 'users' are prompt engineers, but also LLM creators/fi
 - Closely read/look at the model's output and adjust the prompt accordingly. Experiment further.
 - Improve own thinking, learn something from the interaction (thinking and reflecting) itself, not necessarily from the LLM's output.
 - Know when to stop grinding and polish the prompt. The mythically perfect prompt is almost never necessary.
-- Can work with text prompts but also with images even if the techniques are different (multi-shot prompting does not work as well for images).
+- Can work with text prompts but also with multimodal inputs even if the techniques are different (example: multi-shot prompting does not work as well for images).
 - For API tasks
   - can balance polishing the code and polishing the prompt.
   - can get the prompt right such that it can be called millions of times and still work reliably (unlike one-off personal tasks).
@@ -78,11 +82,13 @@ Models gradually improve at handling complex prompts.
 
 Models are getting better at understanding tasks; there will always be a need for clear specifications, and prompt engineering might evolve rather than disappear.
 
-- Example: For math tasks. "Thinking step by step" is now part of the training process and "native" to the model. Users do not have to ask for it anymore.
+- Example: For math tasks. "Thinking step by step" is now part of the training process and "native runtime behavior" to the model. Users do not have to ask for it anymore, and should not work against it.
 
 That models cannot do any assigned task at all becomes rarer, less of a problem.
 
-- No need to hide complexity from the model; it can handle it. The more context, the better.
+- No need to hide complexity from the model; it can handle it. Still
+  - The more context, the more examples, the better.
+  - Give structure to prompts, e.g. with XML
 - Increasing importance of meta-prompting.
 
 There is potential for models to assist more in prompt creation, and asking back well-formed questions, making the process more collaborative.
