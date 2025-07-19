@@ -30,11 +30,11 @@ How I use it in my workflow: See [USAGE.md](USAGE.md#my-personal-usage) for an i
 
 CC-0, see [LICENSE](./LICENSE) file.
 
-## Obsolete?
+## Obsolete? Dubious?
 
 I've sporadically used these codesnippets in my work on a PC, in a Linux Terminal, or in Juypyter Notebooks.
 
-**Since late 2024 you can use the super-smart System Message Generator on [playground.openai.com](https://playground.openai.com) to generate good prompts interactively.**
+**Since late 2024 you can use the super-smart System Message Generator on [playground.openai.com](https://playground.openai.com) or t Anthropic's [Prompt Generator](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/prompt-generator) to generate good prompts interactively.**
 
 (In Playground sidebar, click on "Chat". In Main Panel, near "System Message", click on the "sparkling stars" icon.)
 
