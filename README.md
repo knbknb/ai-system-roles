@@ -1,5 +1,7 @@
 # AI LLM Roles
 
+## Obsolete? See below.
+
 ```text
 An opinionated list of LLM roles, or personas, grouped by topic.  
 A collection of filterable codesnippets, in a TUI (Text User Interface) format.
@@ -34,7 +36,7 @@ CC-0, see [LICENSE](./LICENSE) file.
 
 I've sporadically used these codesnippets in my work on a PC, in a Linux Terminal, or in Juypyter Notebooks.
 
-**Since late 2024 you can use the super-smart System Message Generator on [playground.openai.com](https://playground.openai.com) or t Anthropic's [Prompt Generator](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/prompt-generator) to generate good prompts interactively.**
+**Since late 2024 you can use Anthropic's super-smart [Prompt Generator](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompt-generator) to generate good prompts interactively.**
 
 (In Playground sidebar, click on "Chat". In Main Panel, near "System Message", click on the "sparkling stars" icon.)
 
